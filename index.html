@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vespucci Beach Auto, Wash & Rooftop Lounge — Plan de Afaceri</title>
+<meta name="description" content="Plan de afaceri Vespucci Beach Auto, Wash & Rooftop Lounge, convertit în HTML pe baza documentului PDF furnizat.">
+<style>
+:root {
+  --bg:#041016;
+  --bg2:#071b24;
+  --panel:#0b202a;
+  --panel2:#102d39;
+  --line:rgba(255,255,255,.09);
+  --text:#f3fbff;
+  --muted:#a8bac2;
+  --cyan:#16e6ed;
+  --cyan2:#70fff0;
+  --gold:#ffd276;
+  --shadow:0 26px 70px rgba(0,0,0,.38);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);
+  background:
+    radial-gradient(circle at 12% 5%,rgba(22,230,237,.12),transparent 25%),
+    radial-gradient(circle at 88% 20%,rgba(112,255,240,.05),transparent 24%),
+    linear-gradient(180deg,#030a0f,#07131a 45%,#041016);
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1240px,92%);margin:auto}
+.topbar{
+ position:sticky;top:0;z-index:50;background:rgba(3,10,15,.88);backdrop-filter:blur(18px);
+ border-bottom:1px solid var(--line)
+}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.05em}
+.logo{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+ background:linear-gradient(135deg,var(--cyan),var(--cyan2));color:#001619;
+ box-shadow:0 0 35px rgba(22,230,237,.24);font-weight:1000}
+.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:.16em;margin-top:3px}
+.navlinks{display:flex;gap:14px;font-size:12px;color:#dce9ed}
+.navlinks a:hover{color:var(--cyan)}
+.hero{min-height:760px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:before{
+ content:"";position:absolute;inset:0;
+ background:
+ linear-gradient(90deg,rgba(2,8,12,.98),rgba(2,8,12,.78) 48%,rgba(2,8,12,.36)),
+ radial-gradient(circle at 78% 42%,rgba(22,230,237,.24),transparent 18%),
+ linear-gradient(135deg,#0b2530,#061118 65%);
+}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.badge{display:inline-flex;border:1px solid rgba(22,230,237,.25);background:rgba(22,230,237,.08);
+ color:#bffcff;padding:8px 12px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.hero h1{font-size:clamp(46px,7vw,92px);line-height:.94;margin:18px 0 20px;letter-spacing:-.045em}
+.hero h1 span{color:var(--cyan)}
+.lead{font-size:17px;line-height:1.75;color:#c9d8de;max-width:760px}
+.hero-panel{border:1px solid rgba(255,255,255,.09);border-radius:26px;padding:24px;
+ background:linear-gradient(180deg,rgba(16,45,57,.94),rgba(7,23,31,.96));box-shadow:var(--shadow)}
+.hero-panel h3{font-size:22px;margin:0 0 16px}
+.meta{display:grid;gap:10px}
+.meta-row{display:grid;grid-template-columns:145px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid var(--line)}
+.meta-row:last-child{border:0}
+.meta-row b{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--cyan)}
+.meta-row span{color:#e4eef1;font-size:13px;line-height:1.5}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-54px;position:relative;z-index:3}
+.kpi{padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#102b36,#091922);box-shadow:var(--shadow)}
+.kpi b{display:block;font-size:28px;color:var(--cyan)} .kpi span{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:28px;padding:80px 0}
+.toc{position:sticky;top:92px;align-self:start;max-height:calc(100vh - 115px);overflow:auto;border:1px solid var(--line);border-radius:20px;background:#081820;padding:14px}
+.toc h3{font-size:13px;margin:5px 8px 10px;color:var(--cyan);text-transform:uppercase;letter-spacing:.12em}
+.toc a{display:block;padding:9px 10px;border-radius:10px;color:#bfd0d6;font-size:11px;line-height:1.35}
+.toc a:hover{background:rgba(22,230,237,.08);color:white}
+.content{display:grid;gap:18px}
+.section-card{display:grid;grid-template-columns:82px 1fr;gap:18px;border:1px solid var(--line);border-radius:24px;padding:24px;background:linear-gradient(180deg,rgba(13,32,42,.98),rgba(7,20,28,.98));box-shadow:0 18px 48px rgba(0,0,0,.20)}
+.section-no{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--cyan2));color:#001719;font-weight:1000;font-size:17px;box-shadow:0 0 26px rgba(22,230,237,.18)}
+.section-content h2{font-size:25px;margin:2px 0 13px}
+.section-content p{color:#cbd9de;line-height:1.72;font-size:14px;margin:0 0 12px}
+.section-content ul{margin:10px 0 14px;padding-left:20px;color:#cbd9de;line-height:1.7;font-size:14px}
+.section-content li::marker{color:var(--cyan)}
+.quote{margin:28px 0;padding:26px;border:1px solid rgba(255,210,118,.22);border-radius:22px;background:linear-gradient(135deg,rgba(255,210,118,.08),rgba(22,230,237,.05));text-align:center}
+.quote b{font-size:28px;color:var(--gold);letter-spacing:.04em}
+.footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted)}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer strong{color:white}
+@media(max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-panel{max-width:760px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .layout{grid-template-columns:1fr}
+  .toc{position:relative;top:auto;max-height:none}
+  .toc-links{columns:2}
+}
+@media(max-width:680px){
+ .navlinks{display:none}
+ .hero{min-height:auto;padding:100px 0 80px}
+ .hero h1{font-size:46px}
+ .kpis{grid-template-columns:1fr;margin-top:-32px}
+ .section-card{grid-template-columns:1fr}
+ .toc-links{columns:1}
+ .meta-row{grid-template-columns:1fr}
+ .footer-inner{display:block}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#top"><span class="logo">VB</span><span>VESPUCCI BEACH<small>AUTO • WASH • ROOFTOP LOUNGE</small></span></a>
+    <div class="navlinks">
+      <a href="#s1">Rezumat</a>
+      <a href="#s5">Servicii</a>
+      <a href="#s8">Rooftop</a>
+      <a href="#s15">Personal</a>
+      <a href="#s23">Investiție</a>
+      <a href="#s30">Concluzie</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero" id="top">
+ <div class="container hero-grid">
+  <div>
+    <span class="badge">Plan de afaceri • Vespucci Beach</span>
+    <h1>Vespucci Beach<br><span>Auto, Wash & Rooftop Lounge</span></h1>
+    <p class="lead">Servicii auto • Car Wash • Detailing • Tuning • Rooftop Lounge</p>
+    <div class="quote"><b>“WHERE CARS MEET THE BEACH.”</b></div>
+  </div>
+  <aside class="hero-panel">
+    <h3>Datele proiectului</h3>
+    <div class="meta">
+      <div class="meta-row"><b>Solicitant</b><span>[ Service Vespucci Beach ]</span></div>
+      <div class="meta-row"><b>Denumirea proiectului</b><span>Vespucci Beach Auto, Wash & Rooftop Lounge</span></div>
+      <div class="meta-row"><b>Domeniu</b><span>Servicii auto, car wash, detailing, tuning și entertainment</span></div>
+      <div class="meta-row"><b>Locație</b><span>Vespucci Beach</span></div>
+      <div class="meta-row"><b>Destinatar</b><span>Primăria</span></div>
+      <div class="meta-row"><b>Tip proiect</b><span>Business privat cu impact economic și social asupra comunității</span></div>
+    </div>
+  </aside>
+ </div>
+</header>
+
+<div class="container kpis">
+ <div class="kpi"><b>30</b><span>Secțiuni în plan</span></div>
+ <div class="kpi"><b>3</b><span>Direcții principale</span></div>
+ <div class="kpi"><b>12 luni</b><span>Plan de dezvoltare</span></div>
+ <div class="kpi"><b>1</b><span>Concept integrat</span></div>
+</div>
+
+<main class="container layout">
+ <aside class="toc">
+  <h3>Cuprins</h3>
+  <div class="toc-links"><a href="#s1">1. Rezumat Executiv</a><a href="#s2">2. Viziunea Proiectului</a><a href="#s3">3. Misiunea Afacerii</a><a href="#s4">4. Obiectivele Proiectului</a><a href="#s5">5. Serviciile Auto</a><a href="#s6">6. Car Wash &amp; Detailing</a><a href="#s7">7. Tuning Și Personalizare</a><a href="#s8">8. Rooftop Lounge</a><a href="#s9">9. Open Bar</a><a href="#s10">10. Evenimente Și Activități Comunitare</a><a href="#s11">11. Evenimente Tematice</a><a href="#s12">12. Colaborări Cu Comunitatea Și Business-Urile</a><a href="#s13">13. Pachete Pentru Clienți</a><a href="#s14">14. Program De Fidelizare</a><a href="#s15">15. Structura Personalului</a><a href="#s16">16. Crearea Locurilor De Muncă</a><a href="#s17">17. Impactul Economic</a><a href="#s18">18. Impactul Asupra Zonei Vespucci</a><a href="#s19">19. Ordine, Siguranță Și Responsabilitate</a><a href="#s20">20. Promovarea Business-Ului</a><a href="#s21">21. Strategia De Lansare</a><a href="#s22">22. Surse De Venit</a><a href="#s23">23. Investiția</a><a href="#s24">24. Plan De Dezvoltare Pe 12 Luni</a><a href="#s25">25. Indicatori De Performanță</a><a href="#s26">26. De Ce Vespucci Beach?</a><a href="#s27">27. Diferențierea Față De Un Service Auto Clasic</a><a href="#s28">28. Beneficii Pentru Administrație Și Comunitate</a><a href="#s29">29. Angajamentul Managementului</a><a href="#s30">30. Concluzie</a></div>
+ </aside>
+ <div class="content">
+   
+    <article class="section-card" id="s1">
+      <div class="section-no">01</div>
+      <div class="section-content">
+        <h2>REZUMAT EXECUTIV</h2>
+        <p>Vespucci Beach Auto, Wash &amp; Rooftop Lounge reprezintă un proiect destinat dezvoltării unei locații multifuncționale în zona Vespucci Beach, care îmbină serviciile auto profesionale cu o zonă modernă de relaxare și entertainment.</p>
+<p>Conceptul propus este construit în jurul a trei activități principale: service auto și mecanică; car wash &amp; detailing; rooftop lounge &amp; open bar.</p>
+<p>Scopul proiectului este de a transforma locația într-un punct activ al orașului, unde cetățenii să poată beneficia atât de servicii auto, cât și de un spațiu social modern, accesibil și bine organizat.</p>
+<p>Business-ul urmărește crearea unui punct de interes pentru comunitate, generarea de locuri de muncă, dezvoltarea activității economice și organizarea periodică de evenimente care să implice cetățeni, companii și comunitatea locală.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s2">
+      <div class="section-no">02</div>
+      <div class="section-content">
+        <h2>VIZIUNEA PROIECTULUI</h2>
+        <p>Viziunea noastră este de a crea un business care să devină unul dintre punctele de referință ale zonei Vespucci.</p>
+<p>Conceptul poate fi rezumat prin: „WHERE CARS MEET THE BEACH.”</p>
+<p>Pe timpul zilei, locația va funcționa în principal ca un centru auto modern, destinat reparațiilor, întreținerii, spălării și personalizării vehiculelor.</p>
+<p>În timpul serii, zona rooftop va deveni un spațiu de socializare și relaxare, cu open bar, canapele, muzică ambientală și posibilitatea organizării unor evenimente.</p>
+<p>În weekend, locația poate găzdui întâlniri auto, expoziții, seri tematice și alte activități comunitare.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s3">
+      <div class="section-no">03</div>
+      <div class="section-content">
+        <h2>MISIUNEA AFACERII</h2>
+        <p>Misiunea Vespucci Beach Auto, Wash &amp; Rooftop Lounge este de a oferi clienților un serviciu auto profesionist, combinat cu o experiență modernă și plăcută.</p>
+<p>Principii:</p>
+<ul><li>servicii de calitate;</li><li>transparență în stabilirea prețurilor;</li><li>respect față de clienți;</li><li>timp redus de așteptare;</li><li>personal instruit;</li><li>servicii diversificate;</li><li>evenimente regulate;</li><li>implicare în viața comunității.</li></ul>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s4">
+      <div class="section-no">04</div>
+      <div class="section-content">
+        <h2>OBIECTIVELE PROIECTULUI</h2>
+        <p>Obiective pe termen scurt:<br>1. deschiderea și operaționalizarea locației;<br>2. recrutarea și instruirea personalului;<br>3. dezvoltarea serviciilor auto;<br>4. introducerea serviciului de car wash și detailing;<br>5. amenajarea rooftop lounge-ului;<br>6. stabilirea unei identități vizuale clare;<br>7. atragerea primilor clienți;<br>8. dezvoltarea colaborărilor cu alte business-uri.</p>
+<p>Obiective pe termen mediu:<br>Creșterea numărului de clienți; dezvoltarea unei baze de clienți fideli; organizarea de evenimente auto; dezvoltarea unor pachete premium; colaborări cu companii care dețin flote; dezvoltarea unei echipe stabile de mecanici; transformarea rooftop-ului într-un punct social important al zonei.</p>
+<p>Obiective pe termen lung:<br>Business stabil; angajator important; punct de întâlnire pentru pasionații auto; locație cunoscută; partener pentru alte business-uri; organizator constant de evenimente.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s5">
+      <div class="section-no">05</div>
+      <div class="section-content">
+        <h2>SERVICIILE AUTO</h2>
+        <p>Service-ul va pune la dispoziția clienților servicii precum:</p>
+<ul><li>diagnosticare;</li><li>reparații generale;</li><li>reparații motor;</li><li>sisteme de frânare;</li><li>suspensie;</li><li>direcție;</li><li>transmisie;</li><li>schimb ulei și filtre;</li><li>verificări tehnice;</li><li>reparații electrice;</li><li>înlocuire componente;</li><li>intervenții de urgență.</li></ul>
+<p>Mecanicii vor explica clientului problema identificată și lucrările necesare înainte de efectuarea intervenției, acolo unde situația permite acest lucru.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s6">
+      <div class="section-no">06</div>
+      <div class="section-content">
+        <h2>CAR WASH &amp; DETAILING</h2>
+        <p>O componentă importantă a proiectului va fi reprezentată de serviciile de curățare și întreținere cosmetică a vehiculelor.</p>
+<p>Basic Wash — spălare exterior; curățare geamuri; curățare rapidă interior.</p>
+<p>Premium Wash — spălare exterior; aspirare; curățare interior; curățare jante; finisare exterior.</p>
+<p>Full Detailing — curățare completă interior; detailing exterior; polish; tratamente estetice; atenție specială pentru vehicule premium.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s7">
+      <div class="section-no">07</div>
+      <div class="section-content">
+        <h2>TUNING ȘI PERSONALIZARE</h2>
+        <p>În funcție de serviciile disponibile, locația poate oferi și servicii de personalizare a vehiculelor:</p>
+<ul><li>upgrade-uri de performanță;</li><li>modificări estetice;</li><li>jante;</li><li>suspensie;</li><li>evacuare;</li><li>frâne;</li><li>modificări de culoare;</li><li>elemente vizuale;</li><li>personalizări pentru vehicule premium.</li></ul>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s8">
+      <div class="section-no">08</div>
+      <div class="section-content">
+        <h2>ROOFTOP LOUNGE</h2>
+        <p>Una dintre principalele caracteristici ale proiectului este zona rooftop, care va include canapele, mese, fotolii, bar, iluminat ambiental, muzică, zonă VIP, spațiu pentru socializare, zonă pentru fotografii și vedere către Vespucci Beach.</p>
+<p>Scopul rooftop-ului este de a crea o atmosferă relaxată și elegantă, potrivită atât pentru clienții service-ului, cât și pentru cei care doresc să petreacă timp într-o locație diferită.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s9">
+      <div class="section-no">09</div>
+      <div class="section-content">
+        <h2>OPEN BAR</h2>
+        <p>Zona de bar va completa experiența rooftop-ului. Vor putea fi comercializate, în funcție de autorizațiile aplicabile: băuturi non-alcoolice, cocktailuri, băuturi alcoolice, cafea și produse specifice unui lounge.</p>
+<p>Barul va reprezenta o sursă suplimentară de venit și va contribui la activitatea socială a locației.</p>
+<p>Servirea și comercializarea produselor se vor realiza conform regulilor și autorizațiilor aplicabile.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s10">
+      <div class="section-no">10</div>
+      <div class="section-content">
+        <h2>EVENIMENTE ȘI ACTIVITĂȚI COMUNITARE</h2>
+        <p>VESPUCCI NIGHT CAR MEET</p>
+<p>Eveniment periodic dedicat pasionaților auto, în cadrul căruia participanții își vor putea expune vehiculele și socializa într-un cadru organizat.</p>
+<p>Categorii posibile:<br>Best Sport; Best JDM; Best Luxury; Best Classic; Best Muscle; Best Motorcycle; Best Custom Build.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s11">
+      <div class="section-no">11</div>
+      <div class="section-content">
+        <h2>EVENIMENTE TEMATICE</h2>
+        <p>Rooftop-ul poate găzdui seri tematice, seri DJ, petreceri, seri dedicate anumitor cluburi auto, evenimente pentru business-uri, întâlniri private, evenimente corporate, seri de prezentare pentru vehicule noi și competiții.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s12">
+      <div class="section-no">12</div>
+      <div class="section-content">
+        <h2>COLABORĂRI CU COMUNITATEA ȘI BUSINESS-URILE</h2>
+        <p>Pot fi dezvoltate colaborări cu servicii de ordine și siguranță, servicii medicale, companii de transport, business-uri private, cluburi auto și alte organizații locale.</p>
+<p>Posibile colaborări:</p>
+<ul><li>evenimente auto;</li><li>securizarea evenimentelor;</li><li>prezentări de vehicule;</li><li>pachete pentru flote;</li><li>contracte de mentenanță;</li><li>întâlniri și evenimente.</li></ul>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s13">
+      <div class="section-no">13</div>
+      <div class="section-content">
+        <h2>PACHETE PENTRU CLIENȚI</h2>
+        <p>BASIC — spălare; verificare vizuală; discount pentru următoarea vizită.</p>
+<p>PREMIUM — detailing; verificare generală; discount la anumite servicii.</p>
+<p>VIP — servicii premium; prioritate; discount; acces la beneficii speciale.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s14">
+      <div class="section-no">14</div>
+      <div class="section-content">
+        <h2>PROGRAM DE FIDELIZARE</h2>
+        <p>Poate fi implementat un sistem de tip VESPUCCI AUTO CARD, prin care clienții fideli acumulează beneficii în funcție de numărul de servicii utilizate.</p>
+<p>Bronze — beneficii de bază.<br>Silver — discounturi și oferte speciale.<br>Gold — discounturi mai mari și acces la anumite beneficii.<br>VIP — beneficii premium și acces prioritar la anumite servicii sau evenimente.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s15">
+      <div class="section-no">15</div>
+      <div class="section-content">
+        <h2>STRUCTURA PERSONALULUI</h2>
+        <p>Management: Owner; General Manager; Assistant Manager.</p>
+<p>Departament Auto: Head Mechanic; Senior Mechanic; Mechanic; Junior Mechanic.</p>
+<p>Car Wash / Detailing: Detailing Specialist; Wash Specialist.</p>
+<p>Rooftop: Bartender; Waiter; DJ.</p>
+<p>Evenimente / Securitate: Event Manager; Security.</p>
+<p>Numărul angajaților va fi adaptat volumului de activitate și necesităților business-ului.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s16">
+      <div class="section-no">16</div>
+      <div class="section-content">
+        <h2>CREAREA LOCURILOR DE MUNCĂ</h2>
+        <p>Unul dintre beneficiile directe ale proiectului este crearea unor noi oportunități de angajare. În funcție de dezvoltarea business-ului, compania poate oferi numeroase poziții pentru cetățeni, contribuind la dezvoltarea profesională și la creșterea interacțiunilor dintre membrii comunității.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s17">
+      <div class="section-no">17</div>
+      <div class="section-content">
+        <h2>IMPACTUL ECONOMIC</h2>
+        <p>Business-ul poate contribui la economie prin plata taxelor și impozitelor aplicabile, plata licențelor și autorizațiilor, crearea de locuri de muncă, salariile angajaților, achiziții de materiale, colaborări cu alte business-uri, organizarea de evenimente și circulația banilor între diferite sectoare ale economiei.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s18">
+      <div class="section-no">18</div>
+      <div class="section-content">
+        <h2>IMPACTUL ASUPRA ZONEI VESPUCCI</h2>
+        <p>Poziționarea lângă Vespucci Beach reprezintă un element important al proiectului. Zona are potențialul de a deveni un punct de interes pentru turiști, cetățeni, pasionați auto, oameni de afaceri și cluburi auto.</p>
+<p>Prin amenajarea și utilizarea corespunzătoare a locației, proiectul poate contribui la creșterea atractivității zonei.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s19">
+      <div class="section-no">19</div>
+      <div class="section-content">
+        <h2>ORDINE, SIGURANȚĂ ȘI RESPONSABILITATE</h2>
+        <p>Managementul Vespucci Beach Auto se angajează să respecte regulamentele aplicabile și să mențină un mediu civilizat.</p>
+<p>Vor fi urmărite:</p>
+<ul><li>evitarea blocării traficului;</li><li>respectarea programului de funcționare;</li><li>păstrarea curățeniei;</li><li>gestionarea responsabilă a evenimentelor;</li><li>respectarea regulilor privind consumul și comercializarea băuturilor;</li><li>prevenirea conflictelor în incinta locației.</li></ul>
+<p>Pentru evenimentele de amploare, managementul va comunica în prealabil cu autoritățile competente și va lua măsurile necesare pentru desfășurarea acestora în condiții corespunzătoare.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s20">
+      <div class="section-no">20</div>
+      <div class="section-content">
+        <h2>PROMOVAREA BUSINESS-ULUI</h2>
+        <p>Promovarea va fi realizată prin reclame, social media, afișe, parteneriate cu alte business-uri, evenimente, reduceri de deschidere, programe de fidelizare și colaborări cu cluburi auto.</p>
+<p>Identitatea vizuală va utiliza elemente inspirate de zona Vespucci Beach și de cultura auto.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s21">
+      <div class="section-no">21</div>
+      <div class="section-content">
+        <h2>STRATEGIA DE LANSARE</h2>
+        <p>Deschiderea oficială poate fi organizată sub forma unui eveniment VESPUCCI BEACH AUTO — GRAND OPENING.</p>
+<p>18:00 — deschiderea oficială;<br>18:30 — prezentarea serviciilor;<br>19:00 — car meet;<br>20:00 — demonstrații auto;<br>21:00 — rooftop event;<br>22:00 — concurs / premiere;<br>23:00+ — lounge &amp; entertainment.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s22">
+      <div class="section-no">22</div>
+      <div class="section-content">
+        <h2>SURSE DE VENIT</h2>
+        <p>Principalele surse de venit vor fi:</p>
+<ul><li>servicii mecanice;</li><li>reparații;</li><li>tuning;</li><li>car wash;</li><li>detailing;</li><li>vânzarea produselor din bar;</li><li>evenimente;</li><li>rezervări rooftop;</li><li>pachete VIP;</li><li>contracte cu flote și companii;</li><li>colaborări comerciale.</li></ul>
+<p>Diversificarea veniturilor reduce dependența business-ului de o singură activitate.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s23">
+      <div class="section-no">23</div>
+      <div class="section-content">
+        <h2>INVESTIȚIA</h2>
+        <p>Etapa I — Infrastructură: amenajarea service-ului; echipamente; mobilier; spații de depozitare; zonă car wash; semnalistică.</p>
+<p>Etapa II — Rooftop: canapele; mese; bar; iluminat; sistem audio; decor; zonă VIP.</p>
+<p>Etapa III — Dezvoltare: promovare; evenimente; recrutare; parteneriate; extinderea serviciilor.</p>
+<p>Investiția exactă va fi stabilită în funcție de infrastructura existentă și de condițiile spațiului oferit.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s24">
+      <div class="section-no">24</div>
+      <div class="section-content">
+        <h2>PLAN DE DEZVOLTARE PE 12 LUNI</h2>
+        <p>Luna 1: preluarea locației; amenajare; recrutare; stabilirea procedurilor interne.</p>
+<p>Lunile 2–3: lansarea oficială; promovarea business-ului; dezvoltarea bazei de clienți; primele colaborări.</p>
+<p>Lunile 4–6: introducerea evenimentelor regulate; dezvoltarea programului de fidelizare; extinderea echipei.</p>
+<p>Lunile 7–9: dezvoltarea colaborărilor comerciale; evenimente de amploare; pachete corporate.</p>
+<p>Lunile 10–12: analizarea rezultatelor; optimizarea serviciilor; extinderea activităților; stabilirea obiectivelor pentru anul următor.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s25">
+      <div class="section-no">25</div>
+      <div class="section-content">
+        <h2>INDICATORI DE PERFORMANȚĂ</h2>
+        <p>Pentru a demonstra că proiectul este activ și sustenabil, managementul va urmări:</p>
+<ul><li>numărul de clienți;</li><li>numărul de vehicule reparate;</li><li>numărul de servicii de detailing;</li><li>numărul de clienți rooftop;</li><li>numărul de angajați;</li><li>numărul de evenimente;</li><li>numărul de colaborări;</li><li>veniturile;</li><li>taxele plătite;</li><li>feedback-ul clienților.</li></ul>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s26">
+      <div class="section-no">26</div>
+      <div class="section-content">
+        <h2>DE CE VESPUCCI BEACH?</h2>
+        <p>Locația reprezintă unul dintre cele mai importante elemente ale proiectului. Vespucci Beach oferă combinația dintre plajă + trafic + turism + automobile + entertainment.</p>
+<p>Această combinație permite dezvoltarea unui concept care nu ar funcționa la fel de bine într-o zonă exclusiv industrială.</p>
+<p>Proiectul urmărește să folosească specificul zonei în avantajul comunității, fără să schimbe identitatea acesteia.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s27">
+      <div class="section-no">27</div>
+      <div class="section-content">
+        <h2>DIFERENȚIEREA FAȚĂ DE UN SERVICE AUTO CLASIC</h2>
+        <p>Vespucci Beach Auto nu dorește să fie doar un loc în care un client își repară mașina. Diferența constă în experiență.</p>
+<p>Clientul poate veni cu mașina, o poate repara, o poate spăla, o poate personaliza, poate urca pe rooftop, poate socializa și poate participa la un eveniment.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s28">
+      <div class="section-no">28</div>
+      <div class="section-content">
+        <h2>BENEFICII PENTRU ADMINISTRAȚIE ȘI COMUNITATE</h2>
+        <p>Acordarea dreptului de exploatare a locației pentru acest proiect poate genera:</p>
+<ul><li>valorificarea unei locații;</li><li>investiție privată;</li><li>crearea de locuri de muncă;</li><li>creșterea activității economice;</li><li>venituri fiscale;</li><li>dezvoltarea zonei Vespucci;</li><li>evenimente pentru comunitate;</li><li>colaborări între business-uri;</li><li>activitate constantă;</li><li>crearea unui punct de interes pentru cetățeni.</li></ul>
+<p>Proiectul este gândit astfel încât succesul companiei să fie strâns legat de dezvoltarea comunității.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s29">
+      <div class="section-no">29</div>
+      <div class="section-content">
+        <h2>ANGAJAMENTUL MANAGEMENTULUI</h2>
+        <p>Profesionalism — fiecare client trebuie tratat cu respect.<br>Transparență — serviciile și costurile trebuie comunicate clar.<br>Calitate — se urmărește oferirea unor servicii constante și eficiente.<br>Responsabilitate — activitatea business-ului va respecta regulamentele aplicabile.<br>Implicare — compania va participa activ la dezvoltarea comunității.<br>Dezvoltare — business-ul va fi construit pe termen lung, nu pentru o activitate temporară.</p>
+      </div>
+    </article>
+    
+    <article class="section-card" id="s30">
+      <div class="section-no">30</div>
+      <div class="section-content">
+        <h2>CONCLUZIE</h2>
+        <p>Vespucci Beach Auto, Wash &amp; Rooftop Lounge este conceput ca un proiect multifuncțional care combină industria auto cu socializarea și entertainment-ul.</p>
+<p>Prin integrarea unui service auto, a unei spălătorii și zone de detailing cu un rooftop lounge și open bar, proiectul poate transforma locația într-un punct de interes constant pentru cetățeni.</p>
+<p>Obiectivul nostru nu este doar să operăm un business, ci să construim o locație care generează activitate, locuri de muncă, colaborări și evenimente.</p>
+<p>Considerăm că Vespucci Beach reprezintă cadrul potrivit pentru dezvoltarea unui astfel de concept datorită combinației unice dintre zona de coastă, trafic și cultura auto.</p>
+<p>Suntem pregătiți să investim în amenajarea locației, în dezvoltarea personalului și în promovarea proiectului, cu obiectivul de a construi un business stabil și activ pe termen lung.</p>
+<p>„WHERE CARS MEET THE BEACH.”</p>
+      </div>
+    </article>
+    
+ </div>
+</main>
+
+<footer class="footer">
+ <div class="container footer-inner">
+  <div><strong>VESPUCCI BEACH AUTO, WASH & ROOFTOP LOUNGE</strong><br><small>Plan de afaceri profesional</small></div>
+  <div><small>Document HTML realizat pe baza PDF-ului furnizat.</small></div>
+ </div>
+</footer>
+</body>
+</html>
